@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+
+var myarr = ["C", "C++", "20", 50, 60, "JavaScript"];
+
+for (var i = 0; i < myarr.length; i++) {
+    document.write(myarr[i] + "<br>");
+}
+
+document.write("<hr>");
+
+for (i in myarr) {
+    document.write("Index = " + i +
+                   " Value = " + myarr[i] + "<br>");
+}
+
+document.write("<hr>");
+
+for (i of myarr) {
+    document.write("Value = " + i + "<br>");
+}
+
+document.write("<hr>");
+
+myarr.forEach(function(value) {
+    document.write("Value = " + value + "<br>");
+});
+
+</script>
+</head>
+<body>
+</body>
+</html>
