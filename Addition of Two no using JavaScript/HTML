@@ -1,0 +1,26 @@
+<html>
+<script>
+function doSum() {
+    var a = myfrm.txt1.value;
+    var b = myfrm.txt2.value;
+
+    var c = parseInt(a) + parseInt(b);
+
+    myfrm.ans.value = "Sum is " + c;
+}
+</script>
+
+<body>
+<form id="myfrm">
+    No1 :
+    <input type="text" name="txt1"><br><br>
+
+    No2 :
+    <input type="text" name="txt2"><br><br>
+
+    <input type="button" value="Sum" onclick="doSum()">
+
+    <input type="text" name="ans" readonly>
+</form>
+</body>
+</html>
