@@ -1,0 +1,32 @@
+<html>
+<script>
+function doCalculate() {
+
+    var a = myfrm.txt1.value;
+    var b = myfrm.txt2.value;
+    var choice = myfrm.txt3.value;
+
+    if (choice == "+") {
+        var c = parseInt(a) + parseInt(b);
+        myfrm.ans.value = "Sum is " + c;
+    }
+
+    else if (choice == "-") {
+        var c = parseInt(a) - parseInt(b);
+        myfrm.ans.value = "Sub is " + c;
+    }
+
+    else if (choice == "*") {
+        var c = parseInt(a) * parseInt(b);
+        myfrm.ans.value = "Multiplication is " + c;
+    }
+
+    else if (choice == "/") {
+        var c = parseInt(a) / parseInt(b);
+        myfrm.ans.value = "Division is " + c;
+    }
+}
+</script>
+
+<body>
+<form id="myfrm">
