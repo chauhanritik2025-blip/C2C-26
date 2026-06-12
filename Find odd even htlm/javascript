@@ -1,0 +1,21 @@
+<html>
+<script>
+function checkNumber() {
+    var num = parseInt(document.getElementById("txt1").value);
+    var result = document.getElementById("ans");
+
+    if (num % 2 == 0) {
+        result.innerText = "Number is Even";
+    } else {
+        result.innerText = "Number is Odd";
+    }
+}
+</script>
+
+<body>
+    Number:
+    <input type="text" id="txt1">
+    <input type="button" value="Check" onclick="checkNumber()">
+    <p id="ans"></p>
+</body>
+</html>
